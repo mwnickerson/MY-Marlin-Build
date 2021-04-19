@@ -1057,7 +1057,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -38, -9, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -38, -9, 0 }  //mine are -38, -9 
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1238,8 +1238,8 @@
 #define Y_BED_SIZE 235
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS 0 //changed due to the move to the direct drive that is very different shape than the og 
-#define Y_MIN_POS -25 // see above
+#define X_MIN_POS 0//changed due to the move to the direct drive that is very different shape than the og:  -5 for microswiss DD, 0 for Stock, 0 for chepower china special dd 
+#define Y_MIN_POS -25 // change for x carriage swap -10 for microswiss DD 0 for Stock -25 for chepower china special dd 
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
